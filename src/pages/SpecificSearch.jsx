@@ -6,7 +6,7 @@ import { IoClose } from "react-icons/io5";
 import Spinner from '../components/Spinner';
 import SpecificSearchCard from '../components/SpecificSearchCard';
 import axios from "axios";
-import getNextApiKey from '../data/getAPIKey';
+// import getNextApiKey from '../data/getAPIKey';
 
 
 
@@ -39,7 +39,8 @@ const SpecificSearch = () => {
   }
 
   const EVERYTHING_API = import.meta.env.VITE_EVERYTHING_URL;
-  const API_KEY = getNextApiKey();
+  const API_KEY = import.meta.env.VITE_API_KEY_1;
+  
 
   let currentDate = new Date();
   currentDate.setDate(currentDate.getDate() - 28);

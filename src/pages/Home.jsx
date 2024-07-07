@@ -11,7 +11,7 @@ import Cards from '../components/Cards';
 import AllCategory from '../data/AllCategory';
 import SearchSection from '../components/SearchSection';
 import countries from '../data/country';
-import getNextApiKey from '../data/getAPIKey';
+// import getNextApiKey from '../data/getAPIKey';
 
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
     const navigate = useNavigate();
 
     const TOP_HEADLINE_URL = import.meta.env.VITE_TOP_HEADLINE_URL;
-    const API_KEY = getNextApiKey();
+    const API_KEY = import.meta.env.VITE_API_KEY_1;
 
     useEffect(() => {
         const fetchData = async () => {
